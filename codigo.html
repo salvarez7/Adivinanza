@@ -1,0 +1,29 @@
+<<!DOCTYPE html>
+<html>
+<head>
+	<title> Proyecto Final</title>
+</head>
+<body>
+<p> import random
+<p>numero = random.randint(1, 50) 
+<p>vidas = 10 
+<p>nombre = input("Bienvenido al juego de adivinar el número, ¿Cuál es tu nombre? ")
+<p>print("Todo listo? " + str(nombre) + ". Empecemos, tienes 10 intentos para adivinar el número que estoy pensando. ")
+<p>print("Adivina el número entre 1 y 50")
+<p>while vidas > 0:
+<p>    adivinanza = int(input("Digita el número : "))    
+<p>    if adivinanza == numero:
+<p>        print("¡Has adivinado el número! ¡Has ganado el juego!")
+<p>        break
+<p>    else:
+<p>        vidas = vidas - 1
+<p>        if adivinanza < numero:
+<p>            print("El número que debes adivinar es mayor, siguelo intentando")
+<p>        else:
+<p>            print("El número que debes adivinar es menor, siguelo intentando")
+<p>        print(" Has fallado, te quedan " + str(vidas) + " vidas")
+<p>if vidas == 0:
+<p>    print("Has perdido, te has quedado sin Intentos. El número era " + numero)
+<p>print("Fin del juego")
+</body>
+</html>
