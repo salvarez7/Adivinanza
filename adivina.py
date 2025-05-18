@@ -17,7 +17,7 @@ while vidas > 0:
             print("El número que debes adivinar es menor, siguelo intentando")
         print(" Has fallado, te quedan " + str(vidas) + " vidas")
 if vidas == 0:
-    print("Has perdido, te has quedado sin Intentos. El número era " + numero)
+    print("Has perdido, te has quedado sin Intentos. El número era " + str(numero)
 print("Fin del juego")
 
 
